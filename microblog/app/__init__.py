@@ -8,6 +8,6 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from app import routes
+from app import routes, models
 if __name__ == "__main__":
     app.run(debug=True)
